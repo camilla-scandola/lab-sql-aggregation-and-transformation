@@ -83,7 +83,7 @@ ORDER BY mean_duration DESC;
 SELECT rating, ROUND(AVG(length), 2) AS mean_duration
 FROM film
 GROUP BY rating
-HAVING AVG(length) > 120;
+HAVING mean_duration > 120;
 
 -- 3 Determine which last names are not repeated in the table actor
 SELECT last_name
